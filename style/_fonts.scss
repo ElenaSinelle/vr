@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'IntroR';
+  src: url('../assets/fonts/IntroRegular.otf');
+  src: url('../assets/fonts/IntroRegular.eot') format('embedded-opentype'),
+      url('../assets/fonts/IntroRegular.ttf') format('truetype'),
+      url('../assets/fonts/IntroRegular.woff') format('woff'),
+      url('../assets/fonts/IntroRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RSL';
+  src: url('../assets/fonts/RobotoSlab-Light.ttf') format('truetype');
+  src: url('../assets/fonts/RobotoSlab-Light.eot') format('embedded-opentype'),
+      url('../assets/fonts/RobotoSlab-Light.woff') format('woff'),
+      url('../assets/fonts/RobotoSlab-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
