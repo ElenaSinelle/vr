@@ -65,13 +65,14 @@ body .wrapper {
   margin: 0 auto;
 }
 body .wrapper__narrow {
-  padding-left: 50px;
+  padding-left: 2.5em;
 }
 body .header {
   min-height: 40px;
   padding-left: 1rem;
   display: flex;
   align-items: center;
+  border-bottom: 0.5px solid #e1e1e1;
 }
 body .header__logo-container {
   width: 48%;
@@ -92,7 +93,7 @@ body .header__brand-name {
   line-height: 100%;
 }
 body .main {
-  padding: 48px 75px 80px;
+  padding: 2.4em 3.75em 4em;
 }
 body .main__header {
   display: flex;
@@ -117,13 +118,11 @@ body .main__welcome {
 }
 body .main__welcome-section {
   max-width: 487px;
-  padding-top: 76px;
-}
-body .main__welcome-title {
-  margin-bottom: 16px;
+  padding-top: 3.8em;
 }
 body .main__welcome-contents {
-  margin-bottom: 30px;
+  margin-top: 0.8em;
+  margin-bottom: 1.5em;
 }
 body .main__welcome .button_large {
   width: 270px;
@@ -136,21 +135,21 @@ body .main__welcome .button_large {
   justify-content: center;
   align-items: flex-start;
   gap: 16.5px;
-  margin-left: -12px;
+  margin-left: -0.35em;
   text-decoration: none;
 }
 body .main__welcome-img {
-  margin-left: 44px;
-  margin-right: -75px;
+  margin-left: 2.2em;
+  margin-right: -3.75em;
   z-index: 3;
 }
 body .main__footer {
-  margin-top: -65px;
+  margin-top: -3.25em;
 }
 body .main__footer-nav {
   list-style: none;
   display: flex;
-  gap: 34px;
+  gap: 1.7em;
   padding: 0;
 }
 body .main__footer-nav a {

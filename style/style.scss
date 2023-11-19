@@ -12,14 +12,14 @@ body {
     margin: 0 auto;
 
     &__narrow {
-      padding-left: 50px;
+      padding-left: 2.5em;
     }
   }
 
   @include page-header;
 
   .main {
-    padding: 48px 75px 80px;
+    padding: 2.4em 3.75em 4em;
 
     &__header {
       @include main-header;
@@ -30,42 +30,42 @@ body {
     &__welcome {
       display: flex;
       justify-content: space-between;
-      // gap: 44px;
+
 
       &-section {
         max-width: 487px;
-        padding-top: 76px
+        padding-top: 3.8em;
       }
 
       &-title {
         @extend %main-title-font;
-        margin-bottom: 16px;
       }
 
       &-contents {
-        margin-bottom: 30px;
+        margin-top: 0.8em;
+        margin-bottom: 1.5em;
       }
 
       .button_large {
         @include button-large;
-        margin-left: -12px;
+        margin-left: -0.35em;
         text-decoration: none;
       }
 
       &-img {
-        margin-left: 44px;
-        margin-right: -75px;
+        margin-left: 2.2em;
+        margin-right: -3.75em;
         z-index: 3;
       }
     }
 
     &__footer {
-      margin-top: -65px;
+      margin-top: -3.25em;
 
       &-nav {
         list-style: none;
         display: flex;
-        gap: 34px;
+        gap: 1.7em;
         padding: 0;
 
         a {
