@@ -17,6 +17,16 @@
   text-transform: uppercase;
 }
 
+%possibilities-title-font {
+  font-family: 'IntroB';
+  color: $black-color;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
 %small-button-font {
   font-family: 'IntroR', sans-serif;
   color: $white-color;

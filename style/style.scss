@@ -18,19 +18,20 @@ body {
 
   @include page-header;
 
+  .button_small {
+    @include button-small;
+  }
+
   .main {
     padding: 2.4em 3.75em 4em;
 
     &__header {
       @include main-header;
-      .button_small {
-        @include button-small;
-      }
     }
+
     &__welcome {
       display: flex;
       justify-content: space-between;
-
 
       &-section {
         max-width: 487px;
@@ -59,6 +60,89 @@ body {
       }
     }
 
+    &__possibilities {
+      padding: 4.3em 0 4em;
+
+      &-title {
+        @extend %main-title-font;
+        padding-left: 0.75em;
+        padding-bottom: 0.2em;
+      }
+
+      &-cards-1 {
+        padding-left: 0.75em;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      &-cards-2 {
+        margin-top: -0.3em;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      &-card {
+        padding: 1.3em 1.9em 0.3em 1.7em;
+
+        &-title {
+          @extend %possibilities-title-font;
+          padding-top: 0.7em;
+          padding-bottom: 0.25em;
+
+          &_white {
+            padding-top: 0.7em;
+            padding-bottom: 0.25em;
+            @extend %possibilities-title-font;
+            color: $white-color;
+          }
+        }
+
+        &-imgbox {
+          width: 365px;
+        }
+
+        &-img {
+          width: 100%;
+          height: auto;
+        }
+
+        &-input {
+          width: 323px;
+          height: 50px;
+          padding-left: 14px;
+          margin-bottom: 1.2em;
+        }
+
+        &_small {
+          padding: 0 1.9em 0.3em 3em;
+
+          .button_small {
+            @include button-small;
+            width: 135px;
+            margin-bottom: 3em;
+          }
+        }
+
+        &_small:first-of-type {
+          border: 1px solid $dark-salmon-color;
+          padding: 0 1.9em 0.6em 2.2em;
+          width: 55em;
+        }
+
+        &_small:last-of-type {
+          background-color: $salmon-color;
+          min-width: 365px;
+          padding: 0 1.9em 0.6em 1em;
+        }
+      }
+
+      &-card:first-of-type {
+        border: 1px solid $dark-salmon-color;
+      }
+    }
+
     &__footer {
       margin-top: -3.25em;
 
@@ -72,7 +156,16 @@ body {
           text-decoration: none;
           color: $blue-color;
         }
+    }
+
+    &_possibilities {
+      margin-top: 0;
+
+      a {
+        color: $black-color
       }
     }
   }
+}
+
 }
