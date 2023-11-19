@@ -1,11 +1,78 @@
 @import 'fonts.scss';
 @import 'variables.scss';
 @import 'extends.scss';
-
-
+@import 'mixins.scss';
 
 body {
-  font-family: 'RSL';
-  font-size: 16px;
-  color: black;
+  @extend %main-font;
+
+  .wrapper {
+    max-width: 1440px;
+    min-width: 320px;
+    margin: 0 auto;
+
+    &__narrow {
+      padding-left: 50px;
+    }
+  }
+
+  @include page-header;
+
+  .main {
+    padding: 48px 75px 80px;
+
+    &__header {
+      @include main-header;
+      .button_small {
+        @include button-small;
+      }
+    }
+    &__welcome {
+      display: flex;
+      justify-content: space-between;
+      // gap: 44px;
+
+      &-section {
+        max-width: 487px;
+        padding-top: 76px
+      }
+
+      &-title {
+        @extend %main-title-font;
+        margin-bottom: 16px;
+      }
+
+      &-contents {
+        margin-bottom: 30px;
+      }
+
+      .button_large {
+        @include button-large;
+        margin-left: -12px;
+        text-decoration: none;
+      }
+
+      &-img {
+        margin-left: 44px;
+        margin-right: -75px;
+        z-index: 3;
+      }
+    }
+
+    &__footer {
+      margin-top: -65px;
+
+      &-nav {
+        list-style: none;
+        display: flex;
+        gap: 34px;
+        padding: 0;
+
+        a {
+          text-decoration: none;
+          color: $blue-color;
+        }
+      }
+    }
+  }
 }

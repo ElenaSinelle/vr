@@ -1,0 +1,38 @@
+%main-font {
+  font-family: 'RSL', serif;
+  font-size: 20px;
+  line-height: 1.6;
+  font-style: normal;
+  font-weight: 300;
+  color: $black-color;
+}
+
+%main-title-font {
+  font-family: 'IntroB';
+  color: $black-color;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.18;
+  text-transform: uppercase;
+}
+
+%small-button-font {
+  font-family: 'IntroR', sans-serif;
+  color: $white-color;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+%large-button-font {
+  font-family: 'IntroR', sans-serif;
+  color: $white-color;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: uppercase;
+}

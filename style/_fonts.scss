@@ -10,6 +10,17 @@
 }
 
 @font-face {
+  font-family: 'IntroB';
+  src: url('../assets/fonts/IntroBlackRegular.otf');
+  src: url('../assets/fonts/IntroBlack.eot') format('embedded-opentype'),
+       url('../assets/fonts/IntroBlack.ttf') format('truetype'),
+       url('../assets/fonts/IntroBlack.woff') format('woff'),
+       url('../assets/fonts/IntroBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'RSL';
   src: url('../assets/fonts/RobotoSlab-Light.ttf') format('truetype');
   src: url('../assets/fonts/RobotoSlab-Light.eot') format('embedded-opentype'),
