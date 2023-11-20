@@ -20,7 +20,7 @@
   font-style: normal;
 }
 /* colors */
-body {
+html {
   font-family: "RSL", serif;
   font-size: 20px;
   line-height: 1.6;
@@ -29,7 +29,7 @@ body {
   color: #000000;
 }
 
-body .main__possibilities-title, body .main__welcome-title {
+.main__welcome-title {
   font-family: "IntroB";
   color: #000000;
   font-size: 60px;
@@ -39,17 +39,7 @@ body .main__possibilities-title, body .main__welcome-title {
   text-transform: uppercase;
 }
 
-body .main__possibilities-card-title_white, body .main__possibilities-card-title {
-  font-family: "IntroB";
-  color: #000000;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
-body .main__possibilities-card_small .button_small, body .button_small {
+.button_small {
   font-family: "IntroR", sans-serif;
   color: #FFF;
   font-size: 13px;
@@ -59,7 +49,7 @@ body .main__possibilities-card_small .button_small, body .button_small {
   text-transform: uppercase;
 }
 
-body .main__welcome .button_large {
+.button_large {
   font-family: "IntroR", sans-serif;
   color: #FFF;
   font-size: 35px;
@@ -69,40 +59,21 @@ body .main__welcome .button_large {
   text-transform: uppercase;
 }
 
-body .wrapper {
+.wrapper {
   max-width: 1440px;
   min-width: 320px;
   margin: 0 auto;
 }
-body .wrapper__narrow {
-  padding-left: 2.5em;
-}
-body .header {
-  min-height: 40px;
-  padding-left: 1rem;
-  display: flex;
-  align-items: center;
-  border-bottom: 0.5px solid #e1e1e1;
-}
-body .header__logo-container {
-  width: 48%;
+
+.header {
+  padding: 50px 75px 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-body .header__logo {
-  width: 52px;
-  height: 12px;
-}
-body .header__brand-name {
-  color: #000000;
-  font-family: Helvetica;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
+  align-items: flex-start;
   line-height: 100%;
 }
-body .button_small {
+
+.button_small {
   width: 115px;
   height: 38px;
   border: none;
@@ -114,135 +85,58 @@ body .button_small {
   align-items: flex-start;
   gap: 5px;
 }
-body .main {
-  padding: 2.4em 3.75em 4em;
-}
-body .main__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-body .main__welcome {
-  display: flex;
-  justify-content: space-between;
-}
-body .main__welcome-section {
-  max-width: 487px;
-  padding-top: 3.8em;
-}
-body .main__welcome-contents {
-  margin-top: 0.8em;
-  margin-bottom: 1.5em;
-}
-body .main__welcome .button_large {
+
+.button_large {
   width: 270px;
   height: 84px;
   border: none;
   border-radius: 100px;
-  padding-top: 27px;
   background-color: #5222D0;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 16.5px;
-  margin-left: -0.35em;
+  line-height: 100%;
   text-decoration: none;
 }
-body .main__welcome-img {
-  margin-left: 2.2em;
-  margin-right: -3.75em;
-  z-index: 3;
-}
-body .main__possibilities {
-  padding: 4.3em 0 4em;
-}
-body .main__possibilities-title {
-  padding-left: 0.75em;
-  padding-bottom: 0.2em;
-}
-body .main__possibilities-cards-1 {
-  padding-left: 0.75em;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-body .main__possibilities-cards-2 {
-  margin-top: -0.3em;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-body .main__possibilities-card {
-  padding: 1.3em 1.9em 0.3em 1.7em;
-}
-body .main__possibilities-card-title {
-  padding-top: 0.7em;
-  padding-bottom: 0.25em;
-}
-body .main__possibilities-card-title_white {
-  padding-top: 0.7em;
-  padding-bottom: 0.25em;
-  color: #FFF;
-}
-body .main__possibilities-card-imgbox {
-  width: 365px;
-}
-body .main__possibilities-card-img {
+
+.img-fluid {
   width: 100%;
   height: auto;
 }
-body .main__possibilities-card-input {
-  width: 323px;
-  height: 50px;
-  padding-left: 14px;
-  margin-bottom: 1.2em;
-}
-body .main__possibilities-card_small {
-  padding: 0 1.9em 0.3em 3em;
-}
-body .main__possibilities-card_small .button_small {
-  width: 115px;
-  height: 38px;
-  border: none;
-  border-radius: 100px;
-  padding-top: 10px;
-  background-color: #5222D0;
+
+.main {
+  padding-left: 5.8rem;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 5px;
-  width: 135px;
-  margin-bottom: 3em;
+  justify-content: space-between;
 }
-body .main__possibilities-card_small:first-of-type {
-  border: 1px solid #BB2247;
-  padding: 0 1.9em 0.6em 2.2em;
-  width: 55em;
+.main__welcome-section {
+  flex: 0 1 24.35rem;
 }
-body .main__possibilities-card_small:last-of-type {
-  background-color: #EC615B;
-  min-width: 365px;
-  padding: 0 1.9em 0.6em 1em;
+.main__welcome-title {
+  padding-top: 3.5rem;
+  padding-left: 0.5rem;
 }
-body .main__possibilities-card:first-of-type {
-  border: 1px solid #BB2247;
+.main__welcome-contents {
+  padding-top: 0.9rem;
+  padding-left: 0.5rem;
+  padding-bottom: 1.5rem;
 }
-body .main__footer {
-  margin-top: -3.25em;
+.main__img-container {
+  flex: 0 1 auto;
 }
-body .main__footer-nav {
+
+.footer {
+  padding-left: 6.2rem;
+  margin-top: -3.8rem;
+}
+.footer__nav {
   list-style: none;
   display: flex;
-  gap: 1.7em;
+  gap: 1.8rem;
   padding: 0;
 }
-body .main__footer-nav a {
+.footer__nav a {
   text-decoration: none;
   color: #5222D0;
-}
-body .main__footer_possibilities {
-  margin-top: 0;
-}
-body .main__footer_possibilities a {
-  color: #000000;
 }

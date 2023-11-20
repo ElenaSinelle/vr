@@ -1,35 +1,4 @@
-@mixin page-header {
-  .header {
-    min-height: 40px;
-    padding-left: 1rem;
-    display: flex;
-    align-items: center;
-    border-bottom: 0.5px solid $light-gray;
-
-    &__logo-container {
-      width: 48%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    &__logo {
-      width: 52px;
-      height: 12px;
-    }
-
-    &__brand-name {
-      color: $black-color;
-      font-family: Helvetica;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 100%;
-    }
-  }
-}
-
-@mixin button-small {
+@mixin button_small {
   width: 115px;
   height: 38px;
   border: none;
@@ -43,22 +12,25 @@
   @extend %small-button-font;
 }
 
-@mixin button-large {
+@mixin button_large {
   width: 270px;
   height: 84px;
   border: none;
   border-radius: 100px;
-  padding-top: 27px;
   background-color: $blue-color;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 16.5px;
+  line-height: 100%;
   @extend %large-button-font;
+  text-decoration: none;
 }
 
-@mixin main-header {
+@mixin header {
+  padding: 50px 75px 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  line-height: 100%;
 }

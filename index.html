@@ -4,49 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" shrink-to-fit="no">
   <title>Виарушка</title>
-  <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="style/normalize.css">
   <link rel="stylesheet" href="style/style.css">
   <link rel="shortcut icon" href="assets/images/favicon/favicon.svg" type="image/svg">
 </head>
 <body>
-  <header class="wrapper header">
-    <div class="header__logo-container">
-      <img class="header__logo" src="assets/images/svg/browser-button.svg" alt="browser buttons">
-      <div class="header__brand-name">VR</div>
-    </div>
+  <header class="header wrapper">
+    <a href="#"><img class="logo" src="assets/images/svg/header-logo.svg" alt="header logo"></a>
+    <button class="button button_small" type="button" name="busket" value="busket">
+      <span>Корзина</span>
+      <img src="assets/images/svg/busket.svg" alt="busket">
+    </button>
   </header>
 
-  <main class="wrapper main">
-    <header class="main__header">
-      <a href="#"><img class="main__header-logo" src="assets/images/svg/header-logo.svg" alt="header logo"></a>
-      <button class="button_small" type="button" name="busket" value="busket">
-        <span>Корзина</span>
-        <img src="assets/images/svg/busket.svg" alt="busket">
-      </button>
-    </header>
+  <main class="main wrapper">
+    <div class="main__welcome-section">
+      <h1 class="main__welcome-title">Виртуальная реальность без проводов</h1>
+      <p class="main__welcome-contents">Лучшее, что случалось с виртуальным миром в реальности. Новый компактный шлем без проводов и дорогих комьютеров.</p>
+      <a class="button button_large" href="possibilities.html">
+        <span>Купить</span>
+        <img src="assets/images/svg/buy-icon.svg" alt="buy button">
+      </a>
+    </div>
+    <div class="main__img-container">
+      <img class="img-fluid" src="assets/images/svg/main-page-bg.svg" alt="background picture" class="main__welcome-img"></img>
+    </div>
+    </main>
 
-    <section class="main__welcome wrapper__narrow">
-      <div class="main__welcome-section">
-        <h1 class="main__welcome-title">Виртуальная реальность без проводов</h1>
-        <p class="main__welcome-contents">Лучшее, что случалось с виртуальным миром в реальности. Новый компактный шлем без проводов и дорогих комьютеров.</p>
-        <a href="possibilities.html" class="button_large">
-          <span>Купить</span>
-          <img src="assets/images/svg/buy-icon.svg" alt="buy button">
-        </a>
-      </div>
-      <img src="assets/images/svg/main-page-bg.svg" alt="background picture" class="main__welcome-img"></img>
-      </section>
+  <footer class="footer wrapper">
+    <ul class="footer__nav">
+      <li><a href="possibilities.html">Возможности</a></li>
+      <li><a href="#">Где купить</a></li>
+      <li><a href="#">Доставка</a></li>
+      <li><a href="#">Помощь</a></li>
+    </ul>
+  </footer>
 
-    <footer class="main__footer wrapper__narrow">
-      <ul class="main__footer-nav">
-        <li><a href="possibilities.html">Возможности</a></li>
-        <li><a href="#">Где купить</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Помощь</a></li>
-      </ul>
-    </footer>
-  </main>
 
-  <!-- <script src="bootstrap/bootstrap.bundle.min.js"></script> -->
 </body>
 </html>

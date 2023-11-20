@@ -3,169 +3,154 @@
 @import 'extends.scss';
 @import 'mixins.scss';
 
-body {
+html {
   @extend %main-font;
+}
 
-  .wrapper {
-    max-width: 1440px;
-    min-width: 320px;
-    margin: 0 auto;
+.wrapper {
+  max-width: 1440px;
+  min-width: 320px;
+  margin: 0 auto;
+}
 
-    &__narrow {
-      padding-left: 2.5em;
-    }
+.header {
+  @include header;
+}
+
+.button_small {
+  @include button_small;
+}
+
+.button_large {
+  @include button_large;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.main {
+  padding-left: 5.8rem;
+  display: flex;
+  justify-content: space-between;
+
+  &__welcome-section {
+    flex: 0 1 24.35rem;
   }
 
-  @include page-header;
-
-  .button_small {
-    @include button-small;
+  &__welcome-title {
+    @extend %main-title-font;
+    padding-top: 3.5rem;
+    padding-left: 0.5rem;
   }
 
-  .main {
-    padding: 2.4em 3.75em 4em;
+  &__welcome-contents {
+    padding-top: 0.9rem;
+    padding-left: 0.5rem;
+    padding-bottom: 1.5rem;
+  }
 
-    &__header {
-      @include main-header;
-    }
-
-    &__welcome {
-      display: flex;
-      justify-content: space-between;
-
-      &-section {
-        max-width: 487px;
-        padding-top: 3.8em;
-      }
-
-      &-title {
-        @extend %main-title-font;
-      }
-
-      &-contents {
-        margin-top: 0.8em;
-        margin-bottom: 1.5em;
-      }
-
-      .button_large {
-        @include button-large;
-        margin-left: -0.35em;
-        text-decoration: none;
-      }
-
-      &-img {
-        margin-left: 2.2em;
-        margin-right: -3.75em;
-        z-index: 3;
-      }
-    }
-
-    &__possibilities {
-      padding: 4.3em 0 4em;
-
-      &-title {
-        @extend %main-title-font;
-        padding-left: 0.75em;
-        padding-bottom: 0.2em;
-      }
-
-      &-cards-1 {
-        padding-left: 0.75em;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-      }
-
-      &-cards-2 {
-        margin-top: -0.3em;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-      }
-
-      &-card {
-        padding: 1.3em 1.9em 0.3em 1.7em;
-
-        &-title {
-          @extend %possibilities-title-font;
-          padding-top: 0.7em;
-          padding-bottom: 0.25em;
-
-          &_white {
-            padding-top: 0.7em;
-            padding-bottom: 0.25em;
-            @extend %possibilities-title-font;
-            color: $white-color;
-          }
-        }
-
-        &-imgbox {
-          width: 365px;
-        }
-
-        &-img {
-          width: 100%;
-          height: auto;
-        }
-
-        &-input {
-          width: 323px;
-          height: 50px;
-          padding-left: 14px;
-          margin-bottom: 1.2em;
-        }
-
-        &_small {
-          padding: 0 1.9em 0.3em 3em;
-
-          .button_small {
-            @include button-small;
-            width: 135px;
-            margin-bottom: 3em;
-          }
-        }
-
-        &_small:first-of-type {
-          border: 1px solid $dark-salmon-color;
-          padding: 0 1.9em 0.6em 2.2em;
-          width: 55em;
-        }
-
-        &_small:last-of-type {
-          background-color: $salmon-color;
-          min-width: 365px;
-          padding: 0 1.9em 0.6em 1em;
-        }
-      }
-
-      &-card:first-of-type {
-        border: 1px solid $dark-salmon-color;
-      }
-    }
-
-    &__footer {
-      margin-top: -3.25em;
-
-      &-nav {
-        list-style: none;
-        display: flex;
-        gap: 1.7em;
-        padding: 0;
-
-        a {
-          text-decoration: none;
-          color: $blue-color;
-        }
-    }
-
-    &_possibilities {
-      margin-top: 0;
-
-      a {
-        color: $black-color
-      }
-    }
+  &__img-container {
+    flex: 0 1 auto;
   }
 }
 
+.footer {
+  padding-left: 6.2rem;
+  margin-top: -3.8rem;
+
+  &__nav {
+    list-style: none;
+    display: flex;
+    gap: 1.8rem;
+    padding: 0;
+
+    a {
+      text-decoration: none;
+      color: $blue-color;
+    }
+  }
 }
+//     &__possibilities {
+//       padding: 4.3em 0 4em;
+
+//       &-title {
+//         @extend %main-title-font;
+//         padding-left: 0.75em;
+//         padding-bottom: 0.2em;
+//       }
+
+//       &-cards-1 {
+//         padding-left: 0.75em;
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: flex-start;
+//       }
+
+//       &-cards-2 {
+//         margin-top: -0.3em;
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: flex-start;
+//       }
+
+//       &-card {
+//         padding: 1.3em 1.9em 0.3em 1.7em;
+
+//         &-title {
+//           @extend %possibilities-title-font;
+//           padding-top: 0.7em;
+//           padding-bottom: 0.25em;
+
+//           &_white {
+//             padding-top: 0.7em;
+//             padding-bottom: 0.25em;
+//             @extend %possibilities-title-font;
+//             color: $white-color;
+//           }
+//         }
+
+//         &-imgbox {
+//           width: 365px;
+//         }
+
+//         &-img {
+//           width: 100%;
+//           height: auto;
+//         }
+
+//         &-input {
+//           width: 323px;
+//           height: 50px;
+//           padding-left: 14px;
+//           margin-bottom: 1.2em;
+//         }
+
+//         &_small {
+//           padding: 0 1.9em 0.3em 3em;
+
+//           .button_small {
+//             @include button-small;
+//             width: 135px;
+//             margin-bottom: 3em;
+//           }
+//         }
+
+//         &_small:first-of-type {
+//           border: 1px solid $dark-salmon-color;
+//           padding: 0 1.9em 0.6em 2.2em;
+//           width: 55em;
+//         }
+
+//         &_small:last-of-type {
+//           background-color: $salmon-color;
+//           min-width: 365px;
+//           padding: 0 1.9em 0.6em 1em;
+//         }
+//       }
+
+//       &-card:first-of-type {
+//         border: 1px solid $dark-salmon-color;
+//       }
+//     }
