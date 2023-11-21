@@ -1,0 +1,209 @@
+@import 'fonts.scss';
+@import 'variables.scss';
+@import 'extends.scss';
+@import 'mixins.scss';
+
+/*general styles*/
+html {
+  @extend %main-font;
+}
+
+.wrapper {
+  max-width: 1440px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: max-content 1fr max-content;
+  grid-template-areas:
+          'header header header'
+          'main main main'
+          'footer footer footer';
+
+  // @media all and (max-width: 1440px) {
+  //   grid-template-areas:
+  //         'header header header'
+  //         'main bg-img bg-img'
+  //         'footer bg-img bg-img'
+  //         'footer bg-img bg-img';
+  // }
+
+  // @media all and (max-width: 1240px) {
+  //   grid-template-rows: 15% 1fr 9% 9%;
+  // }
+
+  // @media all and (max-width: 1020px) {
+  //   grid-template-columns: 1fr;
+  //   grid-template-rows: 8% 1.7fr 1fr 10%;
+  //   column-gap: 0;
+  //   grid-template-areas:
+  //           'header'
+  //           'bg-img'
+  //           'main'
+  //           'footer';
+  // }
+
+  // @media all and (max-width: 768px) {
+  //   grid-template-rows: 10% 1.3fr 1fr 10%;
+  // }
+
+  // @media all and (max-width: 576px) {
+  //   grid-template-rows: 30% 1fr 0.5fr;
+  //   grid-template-areas:
+  //           'header'
+  //           'main'
+  //           'footer';
+  // }
+}
+
+.button_small {
+  @include button_small;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+
+  // @media all and (max-width: 1020px) {
+  //   width: 70%;
+  // }
+
+  // @media all and (max-width: 768px) {
+  //   width: 60%;
+  // }
+
+  // @media all and (max-width: 576px) {
+  //   width: 50%;
+  // }
+}
+
+/*header styles*/
+.header {
+  grid-area: header;
+  @include header;
+}
+
+/*main styles*/
+.main {
+  grid-area: main;
+  padding: 0 1.8rem 0.3rem 4.3rem;
+
+  &__cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: max-content max-content;
+    row-gap: 50px;
+    justify-items: space-between;
+  }
+
+  &__welcome-title {
+    @extend %main-title-font;
+    padding-top: 4rem;
+    padding-bottom: 2.6rem;
+    padding-left: 1.8rem;
+    @media all and (max-width: 1020px) {
+      padding-top: 1.5rem;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    height: 50px;
+    margin-top: 0.2rem;
+    margin-bottom: 1.2rem;
+    padding-left: 0.7rem;
+  }
+
+  &__card {
+    max-width: 440px;
+    padding: 0 1.875rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5.4fr 1fr 3fr;
+
+    &_small {
+      grid-template-rows: 1fr 3.3fr;
+    }
+
+    &_signup {
+      display: flex;
+      flex-direction: column;
+      background-color: $salmon-color;
+      margin: -1.5rem 2rem 0;
+      padding: 1.4rem 0.8rem;
+
+      .main__card-title {
+        color: $white-color;
+      }
+
+      .button {
+        width: 135px;
+      }
+    }
+
+    &-title {
+      @extend %card-title-font;
+    }
+  }
+}
+
+/*footer styles*/
+.footer {
+  grid-area: footer;
+  padding: 5rem 6.2rem 2rem;
+
+  // @media all and (max-width: 1440px) {
+  //   display: flex;
+  //   align-items: center;
+  // }
+
+  // @media all and (max-width: 1020px) {
+  //   padding: 0 4.2rem;
+  //   justify-content: center;
+  // }
+
+  // @media all and (max-width: 1020px) {
+  //   padding: 0 1.25rem;
+  // }
+
+  // @media all and (max-width: 576px) {
+  //   padding: 2rem 1.25rem;
+  // }
+
+  &__nav {
+    list-style: none;
+    display: flex;
+    gap: 1.7rem;
+    padding: 0;
+
+    // @media all and (max-width: 1440px) {
+    //   align-items: center;
+    // }
+
+    // @media all and (max-width: 1020px) {
+    //   gap: 3rem;
+    // }
+
+    // @media all and (max-width: 576px) {
+    //   display: grid;
+    //   grid-template-columns: 1fr 1fr;
+    //   grid-template-rows: 1fr 1fr;
+    //   gap: 1rem 2rem;
+    // }
+
+    a {
+      text-decoration: none;
+      color: $black-color;
+
+      // @media all and (max-width: 1440px) {
+      //   display: block;
+      //   text-align: center;
+      // }
+    }
+  }
+}
+
+/* media break-points: 1440, 1240, 1020, 768, 576 */
