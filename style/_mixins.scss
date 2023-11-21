@@ -25,6 +25,18 @@
   line-height: 100%;
   @extend %large-button-font;
   text-decoration: none;
+
+  @media all and (max-width: 1240px) {
+    height: 64px;
+  }
+
+  @media all and (max-width: 768px) {
+    width: 220px;
+    height: 54px;
+    .credit-card {
+      display: none;
+    }
+  }
 }
 
 @mixin header {
@@ -33,4 +45,21 @@
   justify-content: space-between;
   align-items: flex-start;
   line-height: 100%;
+
+  @media all and (max-width: 1240px) {
+    align-items: center;
+    padding: 20px 75px;
+  }
+
+  @media all and (max-width: 576px) {
+    padding: 10px 60px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+
+    .button {
+      justify-self: end;
+    }
+  }
 }
