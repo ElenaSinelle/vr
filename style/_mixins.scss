@@ -9,6 +9,7 @@
   justify-content: center;
   align-items: flex-start;
   gap: 5px;
+  cursor: pointer;
   @extend %small-button-font;
 }
 
@@ -23,6 +24,7 @@
   align-items: center;
   gap: 16.5px;
   line-height: 100%;
+  cursor: pointer;
   @extend %large-button-font;
   text-decoration: none;
 
@@ -54,6 +56,7 @@
   @media all and (max-width: 576px) {
     padding: 10px 60px;
     display: grid;
+    gap: 1rem;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     align-items: center;
