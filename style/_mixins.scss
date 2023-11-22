@@ -1,35 +1,4 @@
-@mixin page-header {
-  .header {
-    min-height: 40px;
-    padding-left: 1rem;
-    display: flex;
-    align-items: center;
-    border-bottom: 0.5px solid $light-gray;
-
-    &__logo-container {
-      width: 48%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    &__logo {
-      width: 52px;
-      height: 12px;
-    }
-
-    &__brand-name {
-      color: $black-color;
-      font-family: Helvetica;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 100%;
-    }
-  }
-}
-
-@mixin button-small {
+@mixin button_small {
   width: 115px;
   height: 38px;
   border: none;
@@ -40,25 +9,60 @@
   justify-content: center;
   align-items: flex-start;
   gap: 5px;
+  cursor: pointer;
   @extend %small-button-font;
 }
 
-@mixin button-large {
+@mixin button_large {
   width: 270px;
   height: 84px;
   border: none;
   border-radius: 100px;
-  padding-top: 27px;
   background-color: $blue-color;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 16.5px;
+  line-height: 100%;
+  cursor: pointer;
   @extend %large-button-font;
+  text-decoration: none;
+
+  @media all and (max-width: 1240px) {
+    height: 64px;
+  }
+
+  @media all and (max-width: 768px) {
+    width: 220px;
+    height: 54px;
+    .credit-card {
+      display: none;
+    }
+  }
 }
 
-@mixin main-header {
+@mixin header {
+  padding: 50px 75px 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  line-height: 100%;
+
+  @media all and (max-width: 1240px) {
+    align-items: center;
+    padding: 20px 75px;
+  }
+
+  @media all and (max-width: 576px) {
+    padding: 10px 60px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+
+    .button {
+      justify-self: end;
+    }
+  }
 }

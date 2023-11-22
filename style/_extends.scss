@@ -5,6 +5,15 @@
   font-style: normal;
   font-weight: 300;
   color: $black-color;
+
+  @media all and (max-width: 1240px) {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  @media all and (max-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 %main-title-font {
@@ -15,9 +24,18 @@
   font-weight: 900;
   line-height: 1.18;
   text-transform: uppercase;
+
+  @media all and (max-width: 1240px) {
+    font-size: 45px;
+    line-height: 1.1;
+  }
+
+  @media all and (max-width: 768px) {
+    font-size: 30px;
+  }
 }
 
-%possibilities-title-font {
+%card-title-font {
   font-family: 'IntroB';
   color: $black-color;
   font-size: 30px;
@@ -25,6 +43,15 @@
   font-weight: 400;
   line-height: 1.2;
   text-transform: uppercase;
+
+  @media all and (max-width: 1240px) {
+    font-size: 26px;
+    line-height: 1.1;
+  }
+
+  @media all and (max-width: 768px) {
+    font-size: 22px;
+  }
 }
 
 %small-button-font {
@@ -35,6 +62,10 @@
   font-weight: 400;
   line-height: 1.5;
   text-transform: uppercase;
+
+  @media all and (max-width: 768px) {
+    font-size: 12px;
+  }
 }
 
 %large-button-font {
@@ -45,4 +76,12 @@
   font-weight: 400;
   line-height: 100%;
   text-transform: uppercase;
+
+  @media all and (max-width: 1240px) {
+    font-size: 27px;
+  }
+
+  @media all and (max-width: 768px) {
+    font-size: 22px;
+  }
 }
